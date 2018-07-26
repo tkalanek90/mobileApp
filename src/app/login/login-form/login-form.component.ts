@@ -4,6 +4,8 @@ import { LoginFormModel } from './login-form.model';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserSession } from './user-session.model';
+import { Router, ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-login-form',
@@ -13,8 +15,10 @@ import { UserSession } from './user-session.model';
 export class LoginFormComponent implements OnInit {
   constructor(
     private loginFormService: LoginFormService,
-    private userSessionService: UserSessionService
-  ) {}
+    private userSessionService: UserSessionService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) { }
 
   formData = new FormGroup({
     username: new FormControl('', [Validators.required]),
@@ -38,11 +42,11 @@ export class LoginFormComponent implements OnInit {
         res.password === this.formData.value.password
       ) {
         this.userSessionService.setUser(data);
+        this.router.navigate(['/home']);
       } else {
         data.loged = 'false';
         this.userSessionService.setUser(data);
       }
-      console.log(this.userSessionService.getUser(res.username));
     });
   }
 }
