@@ -1,0 +1,11 @@
+<mat-card class="wrapForm">
+  <form (ngSubmit)="login()" [formGroup]="formData">
+    <mat-form-field>
+      <input matInput placeholder="Username" type="text" formControlName="username">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Password" type="password" formControlName="password">
+    </mat-form-field>
+    <button mat-raised-button color="primary">Login</button>
+  </form>
+</mat-card>

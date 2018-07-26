@@ -1,0 +1,104 @@
+{
+  "platforms": [
+    {
+      "id": 1,
+      "route": "apple",
+      "title": "Android",
+      "logo": "apple.svg"
+    },
+    {
+      "id": 2,
+      "route": "android",
+      "title": "Apple",
+      "logo": "android.svg"
+    }
+  ],
+  "apple": [
+    {
+      "id": 1,
+      "title": "Apple Iphone X 256GB",
+      "price": 27900,
+      "photo": "platforms/apple/iphone-x-64gb.jpg",
+      "system": "iOS11",
+      "parameters": {
+        "weight": 143,
+        "storage": 64,
+        "battery": 2716,
+        "display": {
+          "size": 5.8,
+          "resolution": {
+            "height": 2436,
+            "width": 1125,
+            "ppi": 458
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Apple Iphone 6 32GB",
+      "price": 9450,
+      "photo": "platforms/apple/iphone-8-64gb.jpg",
+      "system": "iOS8",
+      "parameters": {
+        "weight": 129,
+        "storage": 32,
+        "battery": 1810,
+        "display": {
+          "size": 4.7,
+          "resolution": {
+            "height": 1334,
+            "width": 750,
+            "ppi": 326
+          }
+        }
+      }
+    }
+  ],
+  "android": [
+    {
+      "id": 1,
+      "title": "Samsung Galaxy S7 Edge",
+      "price": 10990,
+      "photo": "platforms/android/samsung-galaxy-s7.jpg",
+      "system": "Android 6.0",
+      "parameters": {
+        "weight": 157,
+        "storage": 32,
+        "battery": 3600,
+        "display": {
+          "size": 5.5,
+          "resolution": {
+            "height": 2560,
+            "width": 1440,
+            "ppi": 534
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Samsung Galaxy S9 64GB",
+      "price": 21990,
+      "photo": "platforms/android/samsung-galaxy-s8.jpg",
+      "system": "Android 8.0 Oreo",
+      "parameters": {
+        "weight": 157,
+        "storage": 32,
+        "battery": 3000,
+        "display": {
+          "size": 5.8,
+          "resolution": {
+            "height": 2960,
+            "width": 1440,
+            "ppi": 570
+          }
+        }
+      }
+    }
+  ],
+  "profile": {
+    "username": "test",
+    "password": "test"
+  }
+}
